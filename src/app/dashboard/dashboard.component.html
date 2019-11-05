@@ -1,0 +1,79 @@
+<div class="container">
+    <p id="dashboard">
+        Dashboard
+    </p>
+    <div class="row">
+        <div class="card card1  ">
+            <p class="cardContent">
+                Departments
+            </p>
+            <p class="cardContent">
+                {{departmentCount}}
+            </p>
+        </div>
+        <div class="card card2  ">
+            <p class="cardContent">
+                Budget
+            </p>
+            <p class="cardContent">
+                {{budget}}
+            </p>
+        </div>
+        <div class="card card3 ">
+            <p class="cardContent">
+                Employees
+            </p>
+
+            <p class="cardContent">
+                {{noOfEmployees}}
+            </p>
+        </div>
+        <div class="card card4 ">
+            <p class="cardContent">
+                Messages
+            </p>
+
+            <p class="cardContent">
+                221
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Departments By Revenue
+                </p>
+                <svg id="chart">
+
+                </svg>
+            </div>
+            <div class="col-md-6">
+                Employees
+                <div class="row">
+                    <div class="col-md-6" *ngFor="let emp of listOfEmployees">
+                        <div class="row empRow ">
+                            <div class="col">
+                                <img id="image" src="{{emp.PICURL}}">
+                            </div>
+                            <div class="col">
+                                <p class="imgText">
+                                    {{emp.FIRSTNAME}}
+                                </p>
+                                <p class="imgText">
+                                    {{emp.NAME}}
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.header {
+    background: #2090EA;
+    height: 96px;
+}
+
+.headertext {
+    color: white;
+    padding-top: 32px;
+    font-size: 24px;
+    margin-left: 16px;
+}
+
+.rightNav {
+    background-color: #F1F2F3;
+}
+
+.leftNav {
+    right: 48px;
+}
+
+.conatiner {
+    margin-right: 0px;
+}
+
+.leftNavItems {
+    padding-top: 12px;
+}

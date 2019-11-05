@@ -1,0 +1,25 @@
+<div>
+    <div class="header">
+        <p class="headertext">
+            HR Scaffold
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 leftNav ">
+                <p routerLink="/dashboard" class="leftNavItems">
+                    Dashboard
+                </p>
+                <p routerLink="/employees" class="leftNavItems">
+                    Employees
+                </p>
+                <p routerLink="/departments" class="leftNavItems">
+                    Departments
+                </p>
+            </div>
+            <div class="col-md-10 rightNav">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

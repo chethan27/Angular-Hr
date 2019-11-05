@@ -1,0 +1,48 @@
+.card {
+    margin: 4px;
+    margin-left: 4px;
+    width: 192px;
+    height: 96px;
+}
+
+.card2 {
+    background-color: #63C2DE;
+}
+
+.card1 {
+    background-color: rgb(248, 108, 107);
+}
+
+.card3 {
+    background-color: #F8CC28;
+}
+
+.card4 {
+    background-color: #66BD74;
+}
+
+#dashboard {
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.cardContent {
+    padding-left: 32px;
+}
+
+.imgText {
+    font-size: 12px;
+}
+
+.empRow {
+    margin-top: 8px;
+}
+
+#image {
+    height: 72px;
+    width: 72px
+}
+
+#chart {
+    size: 48px;
+}

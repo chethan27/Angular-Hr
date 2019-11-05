@@ -1,0 +1,116 @@
+<div>
+    <p class="departments">
+        Departments
+    </p>
+    <tabset #staticTabs>
+        <tab heading="Engineering">
+            <div class="deptTabs" *ngFor="let eng of listOfEmployees">
+                <div *ngIf="eng.NAME === 'Engineering' ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{eng.PICURL}}">
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    {{eng.FIRSTNAME}}
+                                </p>
+                                <p>
+                                    {{eng.BIRTHDATE}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab>
+        <tab heading="Sales">
+            <div class="deptTabs" *ngFor="let eng of listOfEmployees">
+                <div *ngIf="eng.NAME === 'Sales' ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{eng.PICURL}}">
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    {{eng.FIRSTNAME}}
+                                </p>
+                                <p>
+                                    {{eng.BIRTHDATE}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab>
+        <tab heading="General And Admin">
+            <div class="deptTabs" *ngFor="let eng of listOfEmployees">
+                <div *ngIf="eng.NAME === 'General and Admin' ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{eng.PICURL}}">
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    {{eng.FIRSTNAME}}
+                                </p>
+                                <p>
+                                    {{eng.BIRTHDATE}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab>
+        <tab heading="Marketing">
+            <div class="deptTabs" *ngFor="let eng of listOfEmployees">
+                <div *ngIf="eng.NAME === 'Marketing' ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{eng.PICURL}}">
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    {{eng.FIRSTNAME}}
+                                </p>
+                                <p>
+                                    {{eng.BIRTHDATE}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab>
+        <tab heading="Professional Services">
+            <div class="deptTabs" *ngFor="let eng of listOfEmployees">
+                <div *ngIf="eng.NAME === 'Professional Services' ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{eng.PICURL}}">
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    {{eng.FIRSTNAME}}
+                                </p>
+                                <p>
+                                    {{eng.BIRTHDATE}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab>
+    </tabset>

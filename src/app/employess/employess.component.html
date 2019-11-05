@@ -1,0 +1,102 @@
+<div>
+    <button id="button1" (click)="toggleView()">
+        Toggle view
+    </button>
+
+    <ng-container *ngIf="flag; then loggedIn; else loggedOut">
+    </ng-container>
+
+    <ng-template #loggedIn>
+        List View
+        <div class="container table1 ">
+            <div class="row">
+
+                <div class="col-md-3" *ngFor="let emp of listOfEmployees">
+                    <div class="empCard">
+                        <img id="image" src="{{emp.PICURL}}">
+                        <p class="empText1">
+                            {{emp.FIRSTNAME}}
+                        </p>
+                        <p class="empText">
+                            {{emp.NAME}}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </ng-template>
+
+    <ng-template #loggedOut>
+        Grid View
+        <div class="table1">
+            <table>
+                <tr>
+                    <th>
+                        EID
+                    </th>
+                    <th>
+                        Firstname
+                    </th>
+                    <th>
+                        Lastname
+                    </th>
+                    <th>
+                        Street
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>
+                        State
+                    </th>
+                    <th>
+                        zip
+                    </th>
+                    <th>
+                        Birthdate
+                    </th>
+                    <th>
+                        pic
+                    </th>
+                    <th>
+                        jobtite
+                    </th>
+                </tr>
+                <tr *ngFor="let emp of listOfEmployees">
+                    <th>
+                        {{emp.EID}}
+                    </th>
+                    <th>
+                        {{emp.FIRSTNAME}}
+                    </th>
+                    <th>
+                        {{emp.LASTNAME}}
+                    </th>
+                    <th>
+                        {{emp.STREET}}
+                    </th>
+                    <th>
+                        {{emp.CITY}}
+                    </th>
+                    <th>
+                        {{emp.STATE}}
+                    </th>
+                    <th>
+                        {{emp.ZIP}}
+                    </th>
+                    <th>
+                        {{emp.BIRTHDATE}}
+                    </th>
+                    <th>
+                        <img src="{{emp.PICURL}}">
+                    </th>
+                    <th>
+                        {{emp.JOBTITLE}}
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </ng-template>
+</div>
